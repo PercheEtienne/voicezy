@@ -61,6 +61,16 @@ void maxTransfertData(char address, char value, char v2){
     wiringPiSPIDataRW(SPI_CHAN, &v2, sizeof(char));
 }
 
+void turnOnMatrice(){
+    maxTransfertCommand(MAX7219_SHUTDOWN, 1);//Turn on chip
+}
+
+void turnOffMatrice(){
+    maxTransfertCommand(MAX7219_SHUTDOWN, 0);//Turn on chip
+}
+
+
+
 /**
  * Catte fonction sert à initialiser les paramètres du Max7219
  */
@@ -68,19 +78,13 @@ void initMax7219(){
     //On init la communication SPI a une vitesse de 1000000
     spiSetup(1000000);
 
-    maxTransfertCommand(MAX7219_TEST,1);
-    sleep(1);
-    maxTransfertCommand(MAX7219_TEST,0);//FInish test mode
-
     //Le decode mode est surtout utile lorsque le MAX7219 est utilisé avec des afficheurs 7 segments, or, ici,
     //il est utilisé avec une matrice de LEDs, on ne veut donc pas que notre information soit 'interprétée'
     //mais plutôt que l'on affiche exactement ce que l'on veut afficher
     maxTransfertCommand(MAX7219_DECODE_MODE, 0);
-
-
     maxTransfertCommand(MAX7219_BRIGHTNESS, 0);//Use lowest intensity
-    maxTransfertCommand(MAX7219_SCAN_LIMIT, 255);//Scan all digit
-    maxTransfertCommand(MAX7219_SHUTDOWN, 1);//Turn on chip
+    maxTransfertCommand(MAX7219_SCAN_LIMIT, 15);//Scan all digit
+    turnOnMatrice();
 }
 
 int main (void)
@@ -112,8 +116,13 @@ int main (void)
         value = (char)i;
 
         maxTransfertData(row, value, value);
-        printf("%d\n",i);
+        //printf("%d\n",i);
         usleep(1000000);
+
+        if (value>5) {
+            turnOffMatrice();
+            printf("Turn Off");
+        }
     }
 
 }

@@ -26,5 +26,6 @@ Le "decode mode" est surtout utile lorsque le MAX7219 est utilisé avec des affi
  Il a pour rôle de définir le nombre de digits que l'on souhaite exploiter de digit0 à digit8. En fonction du tableau 8 ci-dessous, il peut prendre huit (8) données sur trois (3) bits allant de 0xX0 à 0xX7 sélectionnant ainsi les digits de droite à gauche.
   ![explication_scan_limit](images/scan_limit-MAX7219.png)
 
-
-
+ - **Configuration de la fonction "SHUTDOWN"**\
+ Il permet d'allumer (0x01) ou d'éteindre (0x00) la matrice.
+ 
