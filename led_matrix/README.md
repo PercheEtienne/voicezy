@@ -20,5 +20,6 @@ Le "decode mode" est surtout utile lorsque le MAX7219 est utilisé avec des affi
 
  - Configuration de la fonction "Luminosité"\
  Voici comment on règle la luminosité : 
+ ![explication_luminosite](led_matrix/images/luminosite-MAX7219.png)
 
 
