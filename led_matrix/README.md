@@ -15,7 +15,7 @@ Il s'agit de la première version de test. Dans ce programme, nous avons implém
 
 Voici comment nous l'avons configuré : 
 
- - Configuration de la fonction "Decode Mode"\
+ - Configuration de la fonction "Decode Mode"
 Le "decode mode" est surtout utile lorsque le MAX7219 est utilisé avec des afficheurs 7 segments, or, ici,  il est utilisé avec une matrice de LEDs, on ne veut donc pas que notre information soit 'interprétée'  mais plutôt que l'on affiche exactement ce que l'on veut afficher*
 
 
