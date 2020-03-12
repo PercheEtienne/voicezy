@@ -1,0 +1,1 @@
+cp *.exe /media/clement/RPI
