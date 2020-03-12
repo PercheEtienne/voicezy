@@ -18,8 +18,13 @@ Voici comment nous l'avons configuré :
  - **Configuration de la fonction "Decode Mode"**\
 Le "decode mode" est surtout utile lorsque le MAX7219 est utilisé avec des afficheurs 7 segments, or, ici,  il est utilisé avec une matrice de LEDs, on ne veut donc pas que notre information soit 'interprétée'  mais plutôt que l'on affiche exactement ce que l'on veut afficher*
 
- - **`Configuration de la fonction "Luminosité"`**\
+ - **Configuration de la fonction "Luminosité"**\
  Voici comment on règle la luminosité : 
  ![explication_luminosite](images/luminosite-MAX7219.png)
+ 
+ - **Configuration de la fonction "SCAN_LIMIT"**\
+ Il a pour rôle de définir le nombre de digits que l'on souhaite exploiter de digit0 à digit8. En fonction du tableau 8 ci-dessous, il peut prendre huit (8) données sur trois (3) bits allant de 0xX0 à 0xX7 sélectionnant ainsi les digits de droite à gauche.
+  ![explication_scan_limit](images/scan_limit-MAX7219.png)
+
 
 
