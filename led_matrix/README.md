@@ -9,9 +9,9 @@ Le MAX7219 utilise la communication SPI, qui est un protocole de transfert de do
 
 ## Files
 
-### led_matrix_v1.c
+### librairie/matrix.c
 
-Il s'agit de la première version de test. Dans ce programme, nous avons implémenté l'initialisation du MAX7219.
+Il s'agit de la première version de notre fichier source de la librairie. Dans ce programme, nous avons implémenté l'initialisation du MAX7219.
 
 Voici comment nous l'avons configuré : 
 
@@ -28,4 +28,20 @@ Le "decode mode" est surtout utile lorsque le MAX7219 est utilisé avec des affi
 
  - **Configuration de la fonction "SHUTDOWN"**\
  Il permet d'allumer (0x01) ou d'éteindre (0x00) la matrice.
+ 
+Nous avons également implémenté des fonctions de base permettant d'allumer la matrice comme on le souhaite.
+
+### librairie/matrix.h
+
+Il s'agit du fichier d'en tête du fichier matrix.c
+
+### librairie/data_forme.h
+
+Il s'agit du fichier contenant les variables indiquant comment dessiner les formes utilisées par la librairie : 
+ - Ecran noire
+ - Sourire
+ - Animation de pleurs
+ - Loading animation
+ - Animation de succès
+ - Animation d'échec
  
