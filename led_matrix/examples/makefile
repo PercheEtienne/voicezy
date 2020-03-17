@@ -9,8 +9,8 @@ LIB=-L$(TARGET_GPIO)/lib
 
 all: matrix
 
-matrix: matrix_led.c
-	$(CC) $(INC) $(LIB) matrix_led.c -o matrix_led.exe -lwiringPi
+matrix: matrix_led_example.c
+	$(CC) $(INC) $(LIB) matrix_led_example.c -o matrix_led_example.exe -lwiringPi
 
 clean :
-	rm -rf matrix_led.exe
+	rm -rf matrix_led*.exe
