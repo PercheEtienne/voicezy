@@ -12,7 +12,7 @@ int main(void)
 
     curl = curl_easy_init();
     if(curl) {
-        curl_easy_setopt(curl, CURLOPT_URL, "https://example.com");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://example.com");
 
         /* Forcing HTTP/3 will make the connection fail if the server isn't
            accessible over QUIC + HTTP/3 on the given host and port.
