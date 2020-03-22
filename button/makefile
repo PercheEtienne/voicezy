@@ -8,8 +8,10 @@ LIB=-L$(TARGET_GPIO)/lib
 
 all: button
 
-button: button.c
-	$(CC) $(INC) $(LIB) button.c -o button.exe -lwiringPi
+button: button_v1.c button_v3.c
+	$(CC) $(INC) $(LIB) button_v1.c -o button_v1.exe -lwiringPi
+	$(CC) $(INC) $(LIB) button_v2.c -o button_v2.exe -lwiringPi
+	$(CC) $(INC) $(LIB) button_v3.c -o button_v3.exe -lwiringPi -pthread
 
 clean :
 	rm -rf button*.exe

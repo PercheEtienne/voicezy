@@ -29,7 +29,3 @@ then
 else
 	echo "Le fichier doit avoir nom avec l'extension '.wav' et ne doit pas contenir d'espace ! "
 fi
-
-
-
-
