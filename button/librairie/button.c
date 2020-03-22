@@ -1,21 +1,12 @@
 //
-// Created by clement on 21/03/20.
+// Created by clement on 22/03/20.
 //
-
-#include <stdio.h>
-#include <wiringPi.h>
-#include <stdlib.h>
-
-#define BUTTON 25
-
-#define PUSHED 1
-#define NOT_PUSHED 0
 
 void enregistreSound() {
     system("/home/pi/voicezy/micro/lanceEnregistrement.sh 1 test.wav");
 }
 
-int main(){
+void waitForButtonAndEnregistreSound(){
 
     int state = NOT_PUSHED;
     int lastState;
@@ -34,18 +25,15 @@ int main(){
 
             if (pid==0){
                 enregistreSound();
-                return 0;
+                return;
             }
 
             for(;;){
-
                 if (digitalRead(BUTTON)){
                     system("ps | grep arecord | cut -d' ' -f2 | xargs kill");
-                    return 0;
+                    return;
                 }
-
                 delay(100);
-
             }
         }
         delay(100);

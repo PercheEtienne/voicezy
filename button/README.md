@@ -14,7 +14,7 @@ Il s'agit du fichier qui sert à tester la detection des fronts montant et desce
 
 ### button_v3.c
 
-Il s'agit du fichier qui sert à lancer l'enregistrement lorsqu'on appuie et l'arreter lorsqu'on lâche
+Il s'agit du fichier qui sert à lancer l'enregistrement lorsqu'on appuie et l'arreter lorsqu'on lâche.
 
 
 
