@@ -1,9 +1,10 @@
 //
 // Created by clement on 22/03/20.
 //
+#include "button.h"
 
 void enregistreSound() {
-    system("/home/pi/voicezy/micro/lanceEnregistrement.sh 1 test.wav");
+    system("/home/pi/voicezy/micro/lanceEnregistrement.sh 1 enregistrement.wav");
 }
 
 void waitForButtonAndEnregistreSound(){
@@ -11,8 +12,6 @@ void waitForButtonAndEnregistreSound(){
     int state = NOT_PUSHED;
     int lastState;
     pthread_t th;
-
-    wiringPiSetup();
 
     pinMode (BUTTON, INPUT);
 
@@ -39,5 +38,5 @@ void waitForButtonAndEnregistreSound(){
         delay(100);
     }
 
-    return 0;
+    return;
 }
