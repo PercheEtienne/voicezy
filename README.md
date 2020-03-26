@@ -32,4 +32,28 @@ Ce dossier contient la librairie et les fichiers d'exemples pour le bouton
 
 Ce dossier contient la librairie et les fichiers d'exemples pour la matrice
 
-##led_matrix
+##meteo
+
+Ce dossier contient la librairie et les fichiers d'exemples pour la récupération de météo
+
+##micro
+
+Ce dossier contient le script d'exemple d'utilisation du micro
+
+##project
+
+Ce dossier contient le code de chaque version du projet
+
+##reconnaissance 
+
+Ce dossier contient les fichiers utiles à la reconnaissance vocale
+
+#Files
+
+##recupereWavFiles
+
+Script qui récupère les fichiers audios enregistrés par le Raspberry
+
+##sendExecutablesToRaspberry
+
+Script qui envoit le fichier passé en paramètre au raspberry
