@@ -26,4 +26,10 @@ Sachant que l’on peut pas personnaliser l’utilisation des GPIO du RPI, on ai
 
 ##button
 
-Ce dossier contient la librairie et les fichiers d'exemples pour le button
+Ce dossier contient la librairie et les fichiers d'exemples pour le bouton
+
+##led_matrix
+
+Ce dossier contient la librairie et les fichiers d'exemples pour la matrice
+
+##led_matrix

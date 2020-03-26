@@ -9,7 +9,7 @@ la commande que nous utilisons est donc :
 
     arecord -f cd -t wav -D plughw:<microNumber>,0 <filename>
 
-Le numéro de micro correspond au numéro de la carte son souhaité. Cela est visible avec la commande     arecord -l
+Le numéro de micro correspond au numéro de la carte son souhaité. Cela est visible avec la commande `arecord -l`
 Ce numéro doit être un entier positif, souvent 0, 1 ou 2
 
 Le fichier son contenant l'enregistrement est au format *.wav
