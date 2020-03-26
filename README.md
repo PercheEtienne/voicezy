@@ -21,3 +21,9 @@ Projet de reconnaissance vocale avec le raspberry et la maquette JoyPi
 # La communication avec un autre microcontrôleur
 
 Sachant que l’on peut pas personnaliser l’utilisation des GPIO du RPI, on aimerait communiquer par WiFi avec un microcontrolleur qui aura accès à une matrice de LEDs RGB et avec plus de LEDs. On aurait également accès à un relais avec une lampe qui permettrait de simuler l’allumage d’une lampe. 
+
+#Directory
+
+##button
+
+Ce dossier contient la librairie et les fichiers d'exemples pour le button
