@@ -22,38 +22,38 @@ Projet de reconnaissance vocale avec le raspberry et la maquette JoyPi
 
 Sachant que l’on peut pas personnaliser l’utilisation des GPIO du RPI, on aimerait communiquer par WiFi avec un microcontrolleur qui aura accès à une matrice de LEDs RGB et avec plus de LEDs. On aurait également accès à un relais avec une lampe qui permettrait de simuler l’allumage d’une lampe. 
 
-#Directory
+# Directory
 
-##button
+## button
 
 Ce dossier contient la librairie et les fichiers d'exemples pour le bouton
 
-##led_matrix
+## led_matrix
 
 Ce dossier contient la librairie et les fichiers d'exemples pour la matrice
 
-##meteo
+## meteo
 
 Ce dossier contient la librairie et les fichiers d'exemples pour la récupération de météo
 
-##micro
+## micro
 
 Ce dossier contient le script d'exemple d'utilisation du micro
 
-##project
+## project
 
 Ce dossier contient le code de chaque version du projet
 
-##reconnaissance 
+## reconnaissance 
 
 Ce dossier contient les fichiers utiles à la reconnaissance vocale
 
-#Files
+# Files
 
-##recupereWavFiles
+## recupereWavFiles
 
 Script qui récupère les fichiers audios enregistrés par le Raspberry
 
-##sendExecutablesToRaspberry
+## sendExecutablesToRaspberry
 
 Script qui envoit le fichier passé en paramètre au raspberry
