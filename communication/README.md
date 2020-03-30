@@ -7,6 +7,7 @@ La communication se fait par bluetooth. En temps normal, j'aurai certainement ut
 Nous avons eu l'idée de la communication avec un autre microcontrolleur car la malette JoyPi posait problème sur plusieurs points : 
 
 - La matrice de LEDs n'offrait pas assez de possibilités d'un point de vu couleur et affichage.
+
 - La malette utilise la quasi totalité des GPIO du RPI (seul une reservé au servomoteur est libre).
 
 Nous avons donc décidé d'utiliser un autre microcontrolleur qui pilotera une matrice de LEDs RGB. 
@@ -23,4 +24,15 @@ Nous avons donc décidé d'utiliser un autre microcontrolleur qui pilotera une m
  Nous devrons donc envoyer 192 octets pour chaqu affichage.
  
  L'avantage de ce protocole est que c'est le raspberry qui controlera entièrement la matrice de LEDs RGB.
+ 
+ # Le bluetooth du Raspbian
+ 
+ ## Quelques commandes pour avoir des infos sur le Bluetooth
+ 
+ ### En regardant le journal de démarrage
+ 
+ `dmesg | grep -i blue`
+ 
+ ![dmesg](images/dmesg.png) 
+ 
  
