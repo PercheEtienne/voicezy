@@ -48,6 +48,10 @@ Ce dossier contient le code de chaque version du projet
 
 Ce dossier contient les fichiers utiles à la reconnaissance vocale
 
+## communication 
+
+Ce dossier contient les fichiers utiles à la communication avec l'arduino ainsi que le code pour l'arduino
+
 # Files
 
 ## recupereWavFiles

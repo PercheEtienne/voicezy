@@ -1,10 +1,10 @@
-TARGET_CURL=/home/clement/Bureau/RPI/meteo/target_curl
+TARGET_CURL=/media/clement/Clem/RPI/meteo/target_curl
 
-PATH_CC=/home/clement/Bureau/RPI/tools-master/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
+PATH_CC=/media/clement/Clem/RPI/tools-master/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
 CC=$(PATH_CC)/arm-linux-gnueabihf-gcc
 
-INC=-I$(TARGET_CURL)/include -I/home/clement/Bureau/RPI/meteo/target_open_ssl/include -I/home/clement/Bureau/RPI/meteo/target_open_ssl/include/openssl -I/home/clement/Bureau/RPI/meteo/target-zlib/include
-LIB=-L$(TARGET_CURL)/lib -L/home/clement/Bureau/RPI/meteo/target_open_ssl/lib -L/home/clement/Bureau/RPI/meteo/target-zlib/lib
+INC=-I$(TARGET_CURL)/include -I/media/clement/Clem/RPI/meteo/target_open_ssl/include -I/media/clement/Clem/RPI/meteo/target_open_ssl/include/openssl -I/media/clement/Clem/RPI/meteo/target-zlib/include
+LIB=-L$(TARGET_CURL)/lib -L/media/clement/Clem/RPI/meteo/target_open_ssl/lib -L/media/clement/Clem/RPI/meteo/target-zlib/lib
 
 all: simple_http_request simple_https_request test_meteo
 

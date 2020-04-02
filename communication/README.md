@@ -27,12 +27,18 @@ Nous avons donc décidé d'utiliser un autre microcontrolleur qui pilotera une m
  
  # Le bluetooth du Raspbian
  
- ## Quelques commandes pour avoir des infos sur le Bluetooth
+ Quelques commandes pour avoir des infos sur le Bluetooth et pour débugguer d'éventuelles erreurs...
  
  ### En regardant le journal de démarrage
- 
+ fi
  `dmesg | grep -i blue`
  
  ![dmesg](images/dmesg.png) 
  
- 
+ ### En regardant le status du bluetooth
+  
+  `systemctl status bluetooth`
+  
+  ![dmesg](images/systemctl.png) 
+  
+  L'échec au niveau du serveur d'accès SIM (SAP) n'est pas très important car permettre au RPi3 d'accéder à une carte SIM d'un téléphone compatible Bluetooth n'est pas le but du projet.
