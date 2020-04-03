@@ -20,7 +20,7 @@ Nous avons donc décidé d'utiliser un autre microcontrolleur qui pilotera une m
  
  Pour facilité la modularité de notre application, voici le protocole que nous avons choisi : 
  
- Nous allons envoyer 64 couleurs à la suite qui correspondront aux 64 LEDS de la matrice RGB.
+ Nous allons envoyer 88 couleurs à la suite qui correspondront aux 88 LEDS de la matrice RGB.
  Nous devrons donc envoyer 192 octets pour chaqu affichage.
  
  L'avantage de ce protocole est que c'est le raspberry qui controlera entièrement la matrice de LEDs RGB.
@@ -43,7 +43,7 @@ Nous avons donc décidé d'utiliser un autre microcontrolleur qui pilotera une m
   
   L'échec au niveau du serveur d'accès SIM (SAP) n'est pas très important car permettre au RPi3 d'accéder à une carte SIM d'un téléphone compatible Bluetooth n'est pas le but du projet.
   
-  ## Le bluetooth en C
+  # Le bluetooth en C
   
   Pour utiliser le bluetooth en C, on a besoin de la librairie BlueZ.
   
