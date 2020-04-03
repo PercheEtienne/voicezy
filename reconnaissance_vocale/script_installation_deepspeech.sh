@@ -27,32 +27,76 @@ then
 fi
 echo "PATH_PROJET = $PATH_PROJET\n";
 echo "appuyer sur entrée pour continuer...\n";
+cd $PATH_PROJET;
 echo "FIN CHEMIN DU PROJET\n";
 read a
 
 # MAJ DES PAQUETS RPI
 
-echo "\n-> mise à jour des paquets";
-apt-get update;
-#apt-get upgrade;
+echo "\n\t-> voulez vous faire la maj des paquets ?\n\t-> oui ou non";
+read path
+if [ "$path" != "non" ]
+then
+	echo "\n-> mise à jour des paquets";
+	apt-get update
+	apt-get upgrade
+fi
 echo "\nappuyer sur entrée pour continuer...\n";
 echo "FIN MAJ PAQUETS \n";
 read a
 clear;
 
+# INSTALLATION DE SOX
+
+echo "\n\t-> voulez vous faire l'installation de sox ?\n\t-> oui ou non";
+read path
+if [ "$path" != "non" ]
+then
+	echo "\n-> installation de sox";
+	apt-get install sox
+fi
+echo "\nappuyer sur entrée pour continuer...\n";
+echo "FIN INSTALLATION DEEPSPEECH \n";
+read a
+clear;
+
 # INSTALLATION DE PIP
 
-echo "\n-> installation de pip";
-apt-get install python-pip;
+echo "\n\t-> voulez vous faire l'installation de pip ?\n\t-> oui ou non";
+read path
+if [ "$path" != "non" ]
+then
+	echo "\n-> installation de pip";
+	apt-get install python-pip
+fi
 echo "\nappuyer sur entrée pour continuer...\n";
 echo "FIN INSTALLATION PIP \n";
 read a
 clear;
 
+# INSTALLATION DE TENSORFLOW
+
+echo "\n\t-> voulez vous faire l'installation de tensorflow ?\n\t-> oui ou non";
+read path
+if [ "$path" != "non" ]
+then
+	echo "\n-> installation de tensorflow";
+	pip3 install tensorflow
+fi
+echo "\nappuyer sur entrée pour continuer...\n";
+echo "FIN INSTALLATION DEEPSPEECH \n";
+read a
+clear;
+
 # INSTALLATION DE DEEPSPEECH
 
-echo "\n-> installation de deepspeech";
-pip install deepspeech --user;
+echo "\n\t-> voulez vous faire l'installation de deepspech ?\n\t-> oui ou non";
+read path
+if [ "$path" != "non" ]
+then
+	echo "\n-> installation de deepspech";
+	pip3 install deepspeech --user
+fi
 echo "\nappuyer sur entrée pour continuer...\n";
 echo "FIN INSTALLATION DEEPSPEECH \n";
 read a
