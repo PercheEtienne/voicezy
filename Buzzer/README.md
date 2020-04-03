@@ -14,8 +14,5 @@ sur le RPI. Il se trouve dans la fonction `playMario();`.
 ### librairie/buzzer.h
 Il s'agit du fichier d'en-tête de buzzer.c
 
-### exemples/mario.exe
-Fichier éxécutable permettant de jouer mario sur le RaspberryPi
-
 ### exemples/mario.c 
 C'est le code source de l'éxécutable cité précedemment.
