@@ -20,3 +20,6 @@ Ce fichier comporte les fonctions :
 
 ### /librairie/parseMeteo.h
 Il s'agit du fichier d'en-tête du fichier parseMeteo.c
+
+### /exemples/recupMeteo.c
+Il s'agit du code source permettant de tester les fonctions de la librairie parseMeteo. Le make fournit une version pour le pc et une autre pour le RaspberryPi
