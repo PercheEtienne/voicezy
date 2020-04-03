@@ -1,11 +1,11 @@
-#Le buzzer
+# Le buzzer
 
 Le buzzer présent sur la JoyPi est un **référence**
 
 Il sert dans le projet a jouer une petite musique (le
  theme de mario dans notre cas)
  
-##Files
+## Files
 
 ### librairie/buzzer.c
 Il s'agit du code permettant de jouer la mélodie de mario
