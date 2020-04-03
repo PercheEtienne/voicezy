@@ -1,1 +1,1 @@
-scp pi@192.168.1.37:/home/pi/voicezy/*.wav /home/clement/Bureau/RPI/voicezy/
+scp pi@192.168.1.37:/home/pi/voicezy/*.wav /home/clement/Bureau/RPI/voicezy
