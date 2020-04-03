@@ -1,12 +1,12 @@
-#Filtrer les résultats de l'API Méteo
+# Filtrer les résultats de l'API Méteo
 
 Le résultat de l'API est obtenu sous forme d'une chaine de caractères. Il est
 donc nécessaire de la parser afin d'obtenir uniquement les informations 
 voulue.
 
-##Files
+## Files
 
-###/librairie/parseMeteo.c
+### /librairie/parseMeteo.c
 Ce fichier comporte les fonctions :
    -  `char *substr(char *src,int pos,int len);`
    Cette fonction est faite pour creer une nouvelle chaine
@@ -18,5 +18,5 @@ Ce fichier comporte les fonctions :
    -  `char* infoTempEnKelvin(char * string);`
       Cette fonction permet de récupérer la valeur de la température en Kelvin
 
-###/librairie/parseMeteo.h
+### /librairie/parseMeteo.h
 Il s'agit du fichier d'en-tête du fichier parseMeteo.c
