@@ -42,3 +42,18 @@ Nous avons donc décidé d'utiliser un autre microcontrolleur qui pilotera une m
   ![dmesg](images/systemctl.png) 
   
   L'échec au niveau du serveur d'accès SIM (SAP) n'est pas très important car permettre au RPi3 d'accéder à une carte SIM d'un téléphone compatible Bluetooth n'est pas le but du projet.
+  
+  ## Le bluetooth en C
+  
+  Pour utiliser le bluetooth en C, on a besoin de la librairie BlueZ.
+  
+  Pour utiliser la librairie BlueZ, on a besoin des librairies Glib, DBus et Readline.
+  
+  Pour utiliser la librairie Glib, on a besoin des librairies zlib et libffi.
+  
+  Pour utiliser la librairie Dbus, on a besoin des librairies expat et glib.
+  
+  Pour utiliser la librairie readline, on a besoin de la librairie ncurses.
+  
+  Une fois la librairie BlueZ obtenu, on peut controler le bluetooth du raspberry avec un programme en C.
+ 
