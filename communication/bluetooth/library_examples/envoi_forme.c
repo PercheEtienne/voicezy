@@ -10,7 +10,7 @@ int main(){
     int s = connectToArduino();
 
     printf("Draw neige\n");
-    drawNeigeOnArduino(s);
+    drawEclairOnArduino(s);
 
     printf("Disconnect from Arduino\n");
     disconnectFromArduino(s);

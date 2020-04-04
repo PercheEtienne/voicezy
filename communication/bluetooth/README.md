@@ -14,4 +14,13 @@ Voici ce qu'elle permet de faire.
 
 ## dessin de la pluie
 
- ![nuage](../images/20200404_120918.jpg) 
+ ![nuage](../images/20200404_120918.jpg)
+ 
+ ## dessin de la neige
+ 
+ ![nuage](../images/20200404_144112.jpg)
+
+ ## dessin d'un éclair
+ 
+ ![nuage](../images/20200404_153122.jpg)
+
