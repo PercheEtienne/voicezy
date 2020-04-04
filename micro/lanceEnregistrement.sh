@@ -2,7 +2,7 @@
 
 if [ $# -ne 2 ]
 then
-        echo "Il faut éxecuter la commande : ./lancerEnregistrement.sh <Numero_de_micro> <Nom_De_Fichier>"
+    echo "Il faut éxecuter la commande : ./lancerEnregistrement.sh <Numero_de_micro> <Nom_De_Fichier>"
 	echo "Le numero de micro correspond au numéro de la carte son souhaité. Cela est visible avec la commande 'arecord -l' !"
 	echo "Le fichier doit avoir nom avec l'extension '.wav' et ne doit pas contenir d'espace ! "
 	exit 0

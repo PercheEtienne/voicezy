@@ -145,7 +145,7 @@ void drawBlackScreenOnArduino(int s){
         for(p=0;p<11;p++){
             for(c=0;c<8;c++){
                 for(d=0;d<3;d++) {
-                    status = write(s, &blackScreen[c][p][d], 1);
+                    status = write(s, &blackScreen_[c][p][d], 1);
                     bytes_read = read(s, buf, sizeof(buf));
                     if (bytes_read <= 0) {
                         printf("ERROR\n");

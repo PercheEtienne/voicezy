@@ -29,7 +29,7 @@ void waitForButtonAndEnregistreSound(){
 
             for(;;){
                 if (digitalRead(BUTTON)){
-                    system("ps | grep arecord | cut -d' ' -f2 | xargs kill");
+                    system("ps | grep arecord | cut -d' ' -f1 | xargs kill");
                     return;
                 }
                 delay(100);

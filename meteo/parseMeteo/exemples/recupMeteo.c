@@ -6,9 +6,8 @@ int main(){
 
 	char *Meteo = infoMeteo(rep);
 	char *Temperature = infoTempEnKelvin(rep);
-	
+
 	printf("Meteo = %s\n",Meteo);
 	printf("Temperature = %s\n",Temperature);
 	return 0;
-
 }
