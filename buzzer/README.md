@@ -1,6 +1,6 @@
 # Le buzzer
 
-Le buzzer présent sur la JoyPi est un **référence**
+Nous utilisons le buzzer présent sur la JoyPi
 
 Il sert dans le projet a jouer une petite musique (le
  theme de mario dans notre cas)
