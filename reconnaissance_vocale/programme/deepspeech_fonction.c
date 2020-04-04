@@ -21,6 +21,7 @@ int main(int argc, char *argv[]){
     short RPI; // 1 si sur RPI, si SUR PC
     char validation;
     char nom_ficAudio[20];
+    char commande[1000];
 
     /*
     printf("Argc: %d",argc);
@@ -33,18 +34,30 @@ int main(int argc, char *argv[]){
 
     init_recognition();
 
-    printf("\n\nLES CHEMINS SONT LES SUIVANTS:\n");
-    printf("\tFICHIER MODEL: %s\n",chemin_model);
-    printf("\tFICHIER AUDIO: %s\n",chemin_audio);
-    printf("\n\nLE MODEL EST LE SUIVANT: %s\n\n\n\n",model);
+    sprintf(commande,"arecord -f S16_LE -r16000 -t wav -D plughw:1,0 ../../Audio/record.wav");
+    system(commande);
 
-    test_fic_audio("Eteint");
-    test_fic_audio("Allume");
-    test_fic_audio("Temperature");
-    test_fic_audio("Luminosite");
-    test_fic_audio("Meteo");
-    test_fic_audio("Humidite");
+    printf("\n\n\nLe résultat obtenu est: %d\n",recherche_Ordre(audio_recognition_function("record.wav")));
 
+    return 0;
+}
+
+int recherche_Ordre(char *string) {
+    printf("\n\nResultat obtenu: %s\n",string);
+    if ((strstr(string, "weather") != NULL) || (strstr(string, "whether") != NULL) ||
+        (strstr(string, "whither") != NULL))
+        return 1;
+    else if ((strstr(string, "bright") != NULL))
+        return 2;
+    else if ((strstr(string, "temperature") != NULL))
+        return 3;
+    else if ((strstr(string, "light") != NULL)){
+        if ((strstr(string, "on") != NULL))
+            return 4;
+        return 5;
+    }
+    else if( (strstr(string,"humidity")!=NULL) )
+        return 6;
     return 0;
 }
 
