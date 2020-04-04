@@ -25,7 +25,7 @@ if [ $EXT_FICHIER = "wav" ]
 then
 	#Lacement de l'enregistrement
 	echo "Extension Ok."
-	arecord -r16 -f cd -t wav -D plughw:$microNumber,0 $filename
+	arecord -f S16_LE -r16000 -t wav -D plughw:$microNumber,0 $filename
 else
 	echo "Le fichier doit avoir nom avec l'extension '.wav' et ne doit pas contenir d'espace ! "
 fi
