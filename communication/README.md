@@ -30,7 +30,7 @@ Nous avons donc décidé d'utiliser un autre microcontrolleur qui pilotera une m
  Quelques commandes pour avoir des infos sur le Bluetooth et pour débugguer d'éventuelles erreurs...
  
  ### En regardant le journal de démarrage
- fi
+ 
  `dmesg | grep -i blue`
  
  ![dmesg](images/dmesg.png) 

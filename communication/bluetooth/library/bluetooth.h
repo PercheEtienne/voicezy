@@ -28,6 +28,14 @@ void drawSoleilOnArduino(int s);
 
 void drawNuageOnArduino(int s);
 
+void drawPluieOnArduino(int s);
+
+void drawEclairOnArduino(int s);
+
+void drawBlackScreenOnArduino(int s);
+
+void drawNeigeOnArduino(int s);
+
 /**
  * Se deconnecte de l'arduino
  * @param s : le numéro de la socket
