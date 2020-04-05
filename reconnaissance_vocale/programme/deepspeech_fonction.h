@@ -19,7 +19,7 @@
 
     // VAR MAX
 
-    #define TAILLE_MAX 50
+    #define TAILLE_MAX 200
     #define TAILLE_MAX_CHEMIN 200
 
     // VARIABLE GLOBALE
