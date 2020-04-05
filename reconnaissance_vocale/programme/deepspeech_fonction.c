@@ -58,6 +58,8 @@ int recherche_Ordre(char *string) {
     }
     else if( (strstr(string,"humidity")!=NULL) )
         return 6;
+     else if( (strstr(string,"play")!=NULL) || (strstr(string,"song")!=NULL) )
+        return 7;
     return 0;
 }
 
