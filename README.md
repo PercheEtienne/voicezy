@@ -21,7 +21,7 @@ Il faut faire des phrases courtes contenant le mot inscrit dans les parenthèses
 
 # La communication avec un autre microcontrôleur
 
-Sachant que l’on peut pas personnaliser l’utilisation des GPIO du RPI, on aimerait communiquer par WiFi avec un microcontrolleur qui aura accès à une matrice de LEDs RGB et avec plus de LEDs. On aurait également accès à un relais avec une lampe qui permettrait de simuler l’allumage d’une lampe. 
+Sachant que l’on peut pas personnaliser l’utilisation des GPIO du RPI, on communique par Bluetooth avec un microcontrolleur qui aura accès à une matrice de LEDs RGB et avec plus de LEDs.
 
 # Directories
 
@@ -29,9 +29,21 @@ Sachant que l’on peut pas personnaliser l’utilisation des GPIO du RPI, on ai
 
 Ce dossier contient la librairie et les fichiers d'exemples pour le bouton
 
+## buzzer
+
+Ce dossier contient la librairie et les fichiers d'exemples pour jouer une musique sur le buzzer
+
+## communication
+
+Ce dossier contient les fichiers utiles à la communication avec l'arduino ainsi que le code pour l'arduino
+
 ## led_matrix
 
 Ce dossier contient la librairie et les fichiers d'exemples pour la matrice
+
+## magPi - Voicezy
+
+Ce dossier contient uniquement la version finale de l'exemplaire du compte-rendu du projet, avec une format très fortement inspiré du magazine MagPi
 
 ## meteo
 
@@ -45,13 +57,16 @@ Ce dossier contient le script d'exemple d'utilisation du micro
 
 Ce dossier contient le code de chaque version du projet
 
-## reconnaissance 
+## pyrebase
+
+Ce dossier contient l'ensemble du code et des scripts liés à l'utilisation de Firebase (ici pyrebase)
+
+## reconnaissance_vocale
 
 Ce dossier contient les fichiers utiles à la reconnaissance vocale
 
-## communication 
+## temperature
 
-Ce dossier contient les fichiers utiles à la communication avec l'arduino ainsi que le code pour l'arduino
 
 # Files
 
