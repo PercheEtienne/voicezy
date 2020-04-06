@@ -19,7 +19,6 @@ int main(){
 
     int state = NOT_PUSHED;
     int lastState;
-    pthread_t th;
 
     wiringPiSetup();
 

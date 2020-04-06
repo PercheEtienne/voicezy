@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include "deepspeech_fonction.h"
+#include "deepspeech.h"
 
 void viderBuffer()
 {
@@ -17,20 +17,12 @@ void viderBuffer()
     }
 }
 
-int main(int argc, char *argv[]){
+/*int main(){
     short RPI; // 1 si sur RPI, si SUR PC
     char validation;
     char nom_ficAudio[20];
     char commande[1000];
 
-    /*
-    printf("Argc: %d",argc);
-    if(argc!=2){
-        printf("Veuillez saisir le nom de votre fichier audio: ");scanf("%s",nom_ficAudio);
-    } else{
-        strcpy(nom_ficAudio,argv[1]);
-    }
-    */
 
     init_recognition();
 
@@ -40,12 +32,12 @@ int main(int argc, char *argv[]){
     printf("\n\n\nLe résultat obtenu est: %d\n",recherche_Ordre(audio_recognition_function("record.wav")));
 
     return 0;
-}
+}*/
 
 int recherche_Ordre(char *string) {
     printf("\n\nResultat obtenu: %s\n",string);
     if ((strstr(string, "weather") != NULL) || (strstr(string, "whether") != NULL) ||
-        (strstr(string, "whither") != NULL))
+        (strstr(string, "whither") != NULL) || (strstr(string, "wither") != NULL) || (strstr(string, "with her") != NULL))
         return 1;
     else if ((strstr(string, "bright") != NULL))
         return 2;
@@ -99,8 +91,7 @@ char * audio_recognition_function(char *fic_audio){
     reponse = malloc(TAILLE_MAX * sizeof(char));
 
     system("touch rep.txt");
-    sprintf(commande,"deepspeech --model %s%s --lm %s%s --trie %s%s --audio %s%s > rep.txt 2> .stdout_Deepspeech.txt",
-            chemin_model,model,chemin_model,LM,chemin_model,TRIE,chemin_audio,fic_audio);
+    sprintf(commande,"deepspeech --model /media/pi/RPI/tflite/output_graph.tflite --lm /media/pi/RPI/tflite/lm.binary --trie /media/pi/RPI/tflite/trie --audio enregistrement.wav  > rep.txt 2> .stdout_Deepspeech.txt");
     //printf ("COMMMANDE: %s\n\n",commande);
     system(commande);
 
@@ -127,7 +118,8 @@ void test_fic_audio(char * nom){
     system(commande);
     sprintf(nomA,"../%s/",nom);
     strcpy(chemin_audio,nomA);
-    for(short i=0; i<20 ; i++){
+    short i;
+    for(i=0; i<20 ; i++){
         sprintf(nomA,"%s%hd.wav",nom,i);
         printf("\n\n\n Nom fichier: %s\n",nomA);
         resultat = audio_recognition_function(nomA);

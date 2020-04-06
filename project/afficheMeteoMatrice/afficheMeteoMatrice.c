@@ -39,7 +39,9 @@ int main(){
         disconnectFromArduino(s);
 
     }else{ //processus 2
-        sendTemperatureToFirebase(temp);
+        float temp_float = strtod(temp,NULL);
+        temp_float -= 273.15; //conversion kelvin en degré
+        sendTemperatureToFirebase(temp_float);
     }
 
 }

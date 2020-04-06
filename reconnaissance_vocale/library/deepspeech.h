@@ -25,7 +25,7 @@
     // VARIABLE GLOBALE
 
     char chemin_audio[200];
-    char chemin_model[200];
+    char chemin_model[200]="/media/pi/RPI/tflite/";
     char model[30];
 
     // SQUELETTE DE FONCTION

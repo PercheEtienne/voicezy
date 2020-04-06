@@ -4,9 +4,9 @@
 
 #include "firebase.h"
 
-void sendTemperatureToFirebase(char * temperature){
+void sendTemperatureToFirebase(float temperature){
     char cmd[70] = "python /home/pi/voicezy/sendToFirebase.py Temperature";
-    sprintf(cmd,"%s %s",cmd,temperature);
+    sprintf(cmd,"%s %.2f",cmd,temperature);
     printf("%s\n",cmd);
     system(cmd);
 }
@@ -28,4 +28,3 @@ void sendLocalTemperatureToFirebase(float temperature){
     sprintf(cmd,"%s %.2f",cmd,temperature);
     system(cmd);
 }
-

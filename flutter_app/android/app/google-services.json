@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "268326084099",
+    "firebase_url": "https://voicezy-48275.firebaseio.com",
+    "project_id": "voicezy-48275",
+    "storage_bucket": "voicezy-48275.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268326084099:android:eca4a7373e5ecf85477836",
+        "android_client_info": {
+          "package_name": "com.moundapp.beertracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268326084099-87sq3od6itm3rs0l47o68acd8smu84jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGtkuS4xMRidTtWUsoiYrta5e0Upyxp9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268326084099-87sq3od6itm3rs0l47o68acd8smu84jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
