@@ -3,7 +3,7 @@
 Projet de reconnaissance vocale avec le raspberry et la maquette JoyPi
 
 # Les commandes vocales
-il faut faire des phrases courtes contenant le mot inscrit dans les parenthèses à côté du nom de la commande.
+Il faut faire des phrases courtes contenant le mot inscrit dans les parenthèses à côté du nom de la commande.
 1.  La commande “Météo” (phrase contenant le mot: "weather")
 
 -   Elle permettra d’avoir la météo du jour à Lens. On affichera par exemple un soleil sur la matrice s’il fait beau.
