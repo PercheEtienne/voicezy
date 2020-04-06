@@ -6,5 +6,5 @@
 
 int main(){
     float s = 18.5;
-    sendTemperatureToFirebase(s);
+    sendHumidityToFirebase(s);
 }

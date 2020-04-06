@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void sendTemperatureToFirebase(float temperature);
+void sendTemperatureToFirebase(char * temperature);
 void sendHumidityToFirebase(float humidity);
 void sendLocalTemperatureToFirebase(float temperature);
 void sendLuminosityToFirebase(int luminosity);

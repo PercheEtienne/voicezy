@@ -9,7 +9,7 @@ void recupereTemperatureEtEnvoi(){
     float temp;
     float humidite;
     if (read_temperature(&temp,&humidite)) {
-        sendTemperatureToFirebase(temp);
+        sendLocalTemperatureToFirebase(temp);
     }
 }
 

@@ -17,6 +17,6 @@ now = datetime.now()
 
 dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
 
-data = {sys.argv[1]: sys.argv[2], "time":dt_string}
+data = {"time":dt_string, "categorie": sys.argv[1],"data" : sys.argv[2]}
 
-db.child("data").push(data)
+db.child("users").push(data)

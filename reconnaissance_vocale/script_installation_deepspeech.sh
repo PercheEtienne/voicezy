@@ -56,7 +56,7 @@ then
 	apt-get install sox
 fi
 echo "\nappuyer sur entrée pour continuer...\n";
-echo "FIN INSTALLATION DEEPSPEECH \n";
+echo "FIN INSTALLATION SOX \n";
 read a
 clear;
 
@@ -84,7 +84,7 @@ then
 	pip3 install tensorflow
 fi
 echo "\nappuyer sur entrée pour continuer...\n";
-echo "FIN INSTALLATION DEEPSPEECH \n";
+echo "FIN INSTALLATION TENSORFLOW \n";
 read a
 clear;
 
@@ -106,7 +106,3 @@ clear;
 
 echo "VERSION DE DEEPSPEECH ET TENSORFLOW";
 deepspeech --version;
-
-
-
-
