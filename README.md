@@ -67,6 +67,11 @@ Ce dossier contient les fichiers utiles à la reconnaissance vocale
 
 ## temperature
 
+Ce dossier contient des exemples et la librarie concernant le capteur de température
+
+## threads
+
+Ce dossier contient des exemples de programme avec des threads
 
 # Files
 
