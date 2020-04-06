@@ -3,7 +3,7 @@
 Projet de reconnaissance vocale avec le raspberry et la maquette JoyPi
 
 # Les commandes vocales
-il faut faire des phrases courtes contenant le mot inscrit dans les parenthèses à côté du nom de la commande.
+Il faut faire des phrases courtes contenant le mot inscrit dans les parenthèses à côté du nom de la commande.
 1.  La commande “Météo” (phrase contenant le mot: "weather")
 
 -   Elle permettra d’avoir la météo du jour à Lens. On affichera par exemple un soleil sur la matrice s’il fait beau.
@@ -14,10 +14,10 @@ il faut faire des phrases courtes contenant le mot inscrit dans les parenthèses
 -   Permettra de jouer une petite musique sur le buzzer
 
 3.  La commande “Allume/Éteint la lumière” qui permettra d’éteindre ou d’allumer une LED (phrase contenant le mot: "light" et "on" pour allumer et "light" et rien d'autre pour eteindre)
-4.  La commande “Twitter + CMD”
--   CMD = “luminosité” permet de tweeter la luminosité actuelle (phrase contenant le mot: "brightness")
--   CMD = “température” permet de tweeter la température actuelle (phrase contenant le mot: "temperature")
--   CMD = “humidité” permet de tweeter l’humidité actuelle (phrase contenant le mot: "humidity")
+4.  La commande “CMD”
+-   CMD = “luminosité” permet de "publier" sur Firebase la luminosité actuelle (phrase contenant le mot: "brightness")
+-   CMD = “température” permet de "publier" sur Firebase la température actuelle (phrase contenant le mot: "temperature")
+-   CMD = “humidité” permet de "publier" sur Firebase l’humidité actuelle (phrase contenant le mot: "humidity")
 
 # La communication avec un autre microcontrôleur
 
