@@ -37,6 +37,10 @@ Ce dossier contient la librairie et les fichiers d'exemples pour jouer une musiq
 
 Ce dossier contient les fichiers utiles à la communication avec l'arduino ainsi que le code pour l'arduino
 
+## flutter_app
+
+Ce dossier contient les fichiers de l'application en Flutter
+
 ## led_matrix
 
 Ce dossier contient la librairie et les fichiers d'exemples pour la matrice
