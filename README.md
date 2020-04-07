@@ -25,6 +25,10 @@ Sachant que l’on peut pas personnaliser l’utilisation des GPIO du RPI, on co
 
 # Directories
 
+## arduino
+
+Ce dossier contient le fichier contenant le code de l'arduino
+
 ## button
 
 Ce dossier contient la librairie et les fichiers d'exemples pour le bouton
