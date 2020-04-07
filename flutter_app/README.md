@@ -1,4 +1,4 @@
-# beertracker
+# Voicezy
 
 A new Flutter application.
 
