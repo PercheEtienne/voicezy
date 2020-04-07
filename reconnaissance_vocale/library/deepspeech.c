@@ -37,18 +37,18 @@ void viderBuffer()
 int recherche_Ordre(char *string) {
     printf("\n\nResultat obtenu: %s\n",string);
     if ((strstr(string, "weather") != NULL) || (strstr(string, "whether") != NULL) ||
-        (strstr(string, "whither") != NULL) || (strstr(string, "wither") != NULL) || (strstr(string, "with her") != NULL))
+        (strstr(string, "whither") != NULL) || (strstr(string, "wither") != NULL) || (strstr(string, "with her") != NULL) || (strstr(string, "wiser") != NULL))
         return 1;
-    else if ((strstr(string, "bright") != NULL))
+    else if ((strstr(string, "bright") != NULL) || (strstr(string, "luminosity") != NULL) || (strstr(string, "luminous") != NULL))
         return 2;
     else if ((strstr(string, "temperature") != NULL))
         return 3;
-    else if ((strstr(string, "light") != NULL)){
+    else if ((strstr(string, "light") != NULL) || (strstr(string, "late") != NULL)){
         if ((strstr(string, "on") != NULL))
             return 4;
         return 5;
     }
-    else if( (strstr(string,"humidity")!=NULL) )
+    else if( (strstr(string,"humidity")!=NULL) || (strstr(string,"humility")!=NULL) || (strstr(string,"heredity")!=NULL))
         return 6;
      else if( (strstr(string,"play")!=NULL) || (strstr(string,"song")!=NULL) )
         return 7;

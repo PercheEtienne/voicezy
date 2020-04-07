@@ -115,6 +115,34 @@ void loadingAnimation(long delay){
 /**
  * @param delay : vitesse de l'animation (si delay=100000, on attendra 0.1s entre chaque "frame")
  */
+void loadingAnimation2(long delay){
+    drawMatrix(loading2_1);
+    usleep(delay);
+    drawMatrix(loading2_2);
+    usleep(delay);
+    drawMatrix(loading2_3);
+    usleep(delay);
+    drawMatrix(loading2_4);
+    usleep(delay);
+    drawMatrix(loading2_5);
+    usleep(delay);
+    drawMatrix(loading2_6);
+    usleep(delay);
+    drawMatrix(loading2_7);
+    usleep(delay);
+    drawMatrix(loading2_8);
+    usleep(delay);
+    drawMatrix(loading2_9);
+    usleep(delay);
+    drawMatrix(loading2_10);
+    usleep(delay);
+}
+
+
+
+/**
+ * @param delay : vitesse de l'animation (si delay=100000, on attendra 0.1s entre chaque "frame")
+ */
 void validateAnimation(long delay){
     drawMatrix(validate1);
     usleep(delay);

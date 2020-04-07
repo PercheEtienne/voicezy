@@ -36,6 +36,8 @@ void drawBlackScreenOnArduino(int s);
 
 void drawNeigeOnArduino(int s);
 
+void drawLightOnArduino(int s);
+
 /**
  * Se deconnecte de l'arduino
  * @param s : le numéro de la socket

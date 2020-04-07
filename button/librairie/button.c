@@ -4,7 +4,7 @@
 #include "button.h"
 
 void enregistreSound() {
-    system("/home/pi/voicezy/micro/lanceEnregistrement.sh 0 enregistrement.wav");
+    system("arecord -f S16_LE -r16000 -t wav -D plughw:1,0 enregistrement.wav");
 }
 
 void waitForButtonAndEnregistreSound(){
@@ -24,12 +24,12 @@ void waitForButtonAndEnregistreSound(){
 
             if (pid==0){
                 enregistreSound();
-                return;
+                exit(0);
             }
 
             for(;;){
                 if (digitalRead(BUTTON)){
-                    system("ps | grep arecord | cut -d' ' -f2 | xargs kill > error.txt");
+                    system("ps | grep arecord | cut -d' ' -f2 | xargs kill");
                     return;
                 }
                 delay(100);

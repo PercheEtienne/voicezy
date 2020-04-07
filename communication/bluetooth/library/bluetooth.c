@@ -157,6 +157,28 @@ void drawBlackScreenOnArduino(int s){
     }
 }
 
+void drawLightOnArduino(int s){
+
+    char buf[1024] = {0};
+    int bytes_read,d,c,p,status;
+
+    // send a message
+    if( status == 0 ) {
+        for(p=0;p<11;p++){
+            for(c=0;c<8;c++){
+                for(d=0;d<3;d++) {
+                    status = write(s, &light[c][p][d], 1);
+                    bytes_read = read(s, buf, sizeof(buf));
+                    if (bytes_read <= 0) {
+                        printf("ERROR\n");
+                        p--;
+                    }
+                }
+            }
+        }
+    }
+}
+
 void disconnectFromArduino(int s){
     close(s);
 }

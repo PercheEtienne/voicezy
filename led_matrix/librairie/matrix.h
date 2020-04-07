@@ -72,6 +72,8 @@ void pleureRaspberry(long delay);
  */
 void loadingAnimation(long delay);
 
+void loadingAnimation2(long delay);
+
 /**
  * @param delay : vitesse de l'animation (si delay=100000, on attendra 0.1s entre chaque "frame")
  */

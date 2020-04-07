@@ -12,8 +12,8 @@ int main (void) {
 
     int i;
     
-    for(i=0;i<1;i++) {
-        loadingAnimation(100000);
+    for(i=0;i<3;i++) {
+        loadingAnimation2(150000);
     }
     
     dismissAnimation(50000);
